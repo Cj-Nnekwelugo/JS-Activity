@@ -40,6 +40,7 @@
      * Firsty i will request the user item name he/she wants to purchase then ask the price then also ask the quantity the person needs 
      */
 
+    /*
     let itemName = prompt("what do you want to buy today?");
     let itemPrice = prompt("Price?");
     let itemQuantity = prompt("Quantity?");
@@ -67,5 +68,23 @@
                 Discount Amount = ${finalAmount}`
                 
       );
+      */
 
 
+
+  //Activity 3:  Part 4: Collaborative Technical Challenge
+  /**
+   * First of all i will create a prompt userName input that asks users to iput there name and age, then create a console.log that conbines the userName first name with the number.
+   */
+  // Ask the user for input
+let firstName = prompt("Enter your first name:");
+let favoriteNumber = Number(prompt("Enter your favorite number:"));
+
+let lowerName = firstName.toLowerCase();
+
+let username = `${lowerName}${favoriteNumber}`;
+
+
+alert(`Your username is: ${username}`);
+
+console.log(`Your username is: ${username}`);
