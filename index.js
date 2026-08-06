@@ -65,7 +65,7 @@
    * First of all i will create a prompt userName input that asks users to iput there name and age, then create a console.log that conbines the userName first name with the number.
    */
   // Ask the user for input
-
+/*
 let firstName = prompt("what is your first-name:");
 firstName = firstName.trim();
 
@@ -81,4 +81,22 @@ let userName = `${convertion}${favoriteNumber}`;
 
 alert(`your Username is: ${userName}`);
 
-console.log(`your Username is: ${userName}`);
+console.log(`your Username is: ${userName}`);*/
+
+
+
+// Activity 4: Text and Numbers Part 4: Collaborative Technical Challenge
+/**
+ * this program needs the students name, and the student  numeric score then converts the user name to uppercase and the user numeric score to rounded number and then display the student name and the rounded score.
+ */
+
+let studentName = prompt("student name: ");
+
+let studentScore = Number(prompt("student score: "));
+let upperName = studentName.toUpperCase();
+let roundedScore = Math.round(studentScore);
+
+
+alert(` Name: ${upperName}.  \n Your rounded Score is: ${roundedScore}`);
+
+console.log( `  Name: ${upperName}. \n Your rounded Score is: ${roundedScore}`);
