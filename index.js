@@ -47,28 +47,16 @@
     let disCount = 10; 
     let totalAmount = itemPrice * itemQuantity;
     let finalAmount = totalAmount - disCount;
-    alert(
-      "item Purchased = " +
-      itemName +
-      "\n price = " +
-      itemPrice +
-      "\n Quantity Purchased = " +
-      itemQuantity +
-       "\n  Total Amount = " +
-         totalAmount +
-         "\n Discount  Amount = " +
-         finalAmount +
-         "."
-    )
-    
+    alert(`item Purchased=   ${ itemName} \n price= ${itemPrice} \n Quantity Purchased= ${itemQuantity} \n  Total Amount= ${totalAmount}  \n Discount  Amount = ${finalAmount}`);
+     
     console.log(`item Purchased = ${itemName},
                 Price = ${itemPrice},
                 Quantity Purchased = ${itemQuantity},
                 Total Amount = ${itemPrice * itemQuantity}
                 Discount Amount = ${finalAmount}`
                 
-      );
-      */
+      );*/
+      
 
 
 
@@ -77,14 +65,20 @@
    * First of all i will create a prompt userName input that asks users to iput there name and age, then create a console.log that conbines the userName first name with the number.
    */
   // Ask the user for input
-let firstName = prompt("Enter your first name:");
-let favoriteNumber = Number(prompt("Enter your favorite number:"));
 
-let lowerName = firstName.toLowerCase();
+let firstName = prompt("what is your first-name:");
+firstName = firstName.trim();
 
-let username = `${lowerName}${favoriteNumber}`;
+let favoriteNumber = Number(prompt("what is your favorite number:"));
 
+if (firstName.length > 8) {
+    firstName = firstName.slice(0, 8);
+};
 
-alert(`Your username is: ${username}`);
+let convertion = firstName.toLowerCase();
 
-console.log(`Your username is: ${username}`);
+let userName = `${convertion}${favoriteNumber}`;
+
+alert(`your Username is: ${userName}`);
+
+console.log(`your Username is: ${userName}`);
