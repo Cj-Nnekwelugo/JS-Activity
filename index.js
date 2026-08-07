@@ -89,10 +89,11 @@ console.log(`your Username is: ${userName}`);*/
 /**
  * this program needs the students name, and the student  numeric score then converts the user name to uppercase and the user numeric score to rounded number and then display the student name and the rounded score.
  */
-
+/*
 let studentName = prompt("student name: ");
 
 let studentScore = Number(prompt("student score: "));
+
 let upperName = studentName.toUpperCase();
 let roundedScore = Math.round(studentScore);
 
@@ -100,3 +101,44 @@ let roundedScore = Math.round(studentScore);
 alert(` Name: ${upperName}.  \n Your rounded Score is: ${roundedScore}`);
 
 console.log( `  Name: ${upperName}. \n Your rounded Score is: ${roundedScore}`);
+*/
+
+
+
+
+
+// Activity 5: Decision Makers  Part 4: Collaborative Technical Challenge
+
+/**
+ * 
+ */
+
+let age = Number(prompt("what is your age:"));
+let day = prompt("is today weekdays or weekends?");
+let price;
+
+ if (age < 17 ) {
+    price = 1200;
+ } 
+ else if (age >= 18 && age <= 70 ){
+    price = 3000;
+ } 
+
+ if (day === "weekdays"){
+    price = 4000;
+ }
+  else if (day === "weekends"){
+    price = 3000;
+ }
+ else{
+    price = 1200;
+ };
+
+ alert(`Movie Ticket 
+     age: ${age} 
+     day: ${day} 
+     price= ${price}`);
+
+ console.log(`price: ${price}`);
+
+ 
