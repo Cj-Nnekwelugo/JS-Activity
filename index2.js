@@ -21,3 +21,25 @@ let tipAmount = calculateTip(billAmount, tipPercentage);
 displayMessage(billAmount, tipAmount);
 
 
+
+
+// Activity 9: Functions Expressions and Arrow Functions
+/**
+ The program needs three small helper functions. One converts a percentage into a decimal, another calculates the area of a rectangle, and the third converts Celsius temperature into Fahrenheit.
+ */
+
+
+const percentageToDecimal = (percentage) => percentage / 100;
+
+
+const rectangleArea = (length, width) => length * width;
+
+
+const celsiusToFahrenheit = (celsius) => (celsius * 9 / 5) + 32;
+
+
+console.log(percentageToDecimal(50));
+
+console.log(rectangleArea(10, 5));
+
+console.log(celsiusToFahrenheit(25));
