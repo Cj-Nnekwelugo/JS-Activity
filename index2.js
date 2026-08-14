@@ -28,7 +28,7 @@ displayMessage(billAmount, tipAmount);
  The program needs three small helper functions. One converts a percentage into a decimal, another calculates the area of a rectangle, and the third converts Celsius temperature into Fahrenheit.
  */
 
-
+/*
 const percentageToDecimal = (percentage) => percentage / 100;
 
 
@@ -42,4 +42,19 @@ console.log(percentageToDecimal(50));
 
 console.log(rectangleArea(10, 5));
 
-console.log(celsiusToFahrenheit(25));
+console.log(celsiusToFahrenheit(25)); */
+
+
+
+// Activity 10: Build-a-Program Challenge
+
+/**
+  i will collect the item name, price, and quantity of what ever the user buys
+ */
+
+  let itemPurchsed = prompt("item Name:")
+    let price = Number(prompt("Enter the price:"));
+  let quantity = Number(prompt("Enter the Quantity:"));
+  let subTotal = price * quantity;
+  alert(` item Name: ${itemPurchsed}  price: ${price} Quantity ${quantity}  Total amount ${subTotal}`);
+  console.log(`${itemPurchsed} ${price} ${quantity} ${subTotal}`);
